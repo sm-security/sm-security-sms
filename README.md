@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 n = Phone number 
 key = api key
 ```javascript
- SmSecurity (n,key) {
+ SmSecurity (n,key):string {
     var link = 'https://sm-security.firebaseapp.com/';
     var params = {
       phone:n,
@@ -45,6 +45,8 @@ key = api key
     return iframeLink;
   }
 ```
+
+this function will be return iframe link.
 
 After submit login form you can call iframe in your component inside your login page or as lightbox.
 
