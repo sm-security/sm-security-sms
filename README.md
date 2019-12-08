@@ -46,6 +46,9 @@ key = api key
   }
 ```
 
+After submit login form you can call iframe in your component inside your login page or as lightbox.
+
+
 ## Add this code to Listene the 
 ```javascript
 ngOnInit() {
