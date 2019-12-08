@@ -31,7 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 n = Phone number 
 key = api key
- `
+```javascript
  SmSecurity (n,key) {
     var link = 'https://sm-security.firebaseapp.com/';
     var params = {
@@ -44,10 +44,10 @@ key = api key
     var iframeLink = link+'?'+parametersText;
     return iframeLink;
   }
-  `
+```
 
 ## Add this code to Listene the 
-
+```javascript
 ngOnInit() {
     .....
     if (window.addEventListener) {
@@ -56,7 +56,11 @@ ngOnInit() {
     .....
 }
 
+
 @HostListener('onMessage', ['$event'])
 SmSecurityCallback ($event) {
    console.log($event.data);
 }
+
+```
+Responce data : message - mode
